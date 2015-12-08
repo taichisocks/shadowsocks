@@ -7,13 +7,17 @@
 //
 
 
-class Shadowsocks {
+public class Shadowsocks {
     
-    func start() {
+    public init() {
+        
+    }
+    
+    public func start() {
         print("start")
     }
     
-    func stop() {
+    public func stop() {
         print("stop")
     }
 }

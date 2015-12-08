@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import ShadowsocksKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         start_proxy()
+        let s = ShadowsocksKit.Shadowsocks()
+        s.start()
     }
 
     override func didReceiveMemoryWarning() {

@@ -7,12 +7,15 @@
 //
 
 import Cocoa
+import ShadowsocksKit
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         start_proxy()
+        let s = ShadowsocksKit.Shadowsocks()
+        s.start()
     }
 
     override var representedObject: AnyObject? {
