@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8178931C1C1714B60028F82C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8178931A1C1714B60028F82C /* main.c */; };
+		8178931D1C1714B60028F82C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8178931A1C1714B60028F82C /* main.c */; };
 		81C68FA11C16CD3A0063D2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */; };
 		81C68FA31C16CD3A0063D2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FA21C16CD3A0063D2E3 /* ViewController.swift */; };
 		81C68FA61C16CD3A0063D2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA41C16CD3A0063D2E3 /* Main.storyboard */; };
@@ -19,7 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadowsocks-iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		817893181C1714B60028F82C /* shadowsocks-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		817893191C1714B60028F82C /* shadowsocks-Mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-Mac-Bridging-Header.h"; sourceTree = "<group>"; };
+		8178931A1C1714B60028F82C /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = Common/main.c; sourceTree = "<group>"; };
+		8178931B1C1714B60028F82C /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = Common/main.h; sourceTree = "<group>"; };
+		81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shadowsocks-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81C68FA21C16CD3A0063D2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81C68FA51C16CD3A0063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,9 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		817893171C1714940028F82C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8178931A1C1714B60028F82C /* main.c */,
+				8178931B1C1714B60028F82C /* main.h */,
+				817893181C1714B60028F82C /* shadowsocks-iOS-Bridging-Header.h */,
+				817893191C1714B60028F82C /* shadowsocks-Mac-Bridging-Header.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		81C68F941C16CD3A0063D2E3 = {
 			isa = PBXGroup;
 			children = (
+				817893171C1714940028F82C /* Common */,
 				81C68F9F1C16CD3A0063D2E3 /* shadowsocks-iOS */,
 				81C68FB71C16CD630063D2E3 /* shadowsocks-Mac */,
 				81C68F9E1C16CD3A0063D2E3 /* Products */,
@@ -198,6 +216,7 @@
 			files = (
 				81C68FA31C16CD3A0063D2E3 /* ViewController.swift in Sources */,
 				81C68FA11C16CD3A0063D2E3 /* AppDelegate.swift in Sources */,
+				8178931C1C1714B60028F82C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +226,7 @@
 			files = (
 				81C68FBB1C16CD630063D2E3 /* ViewController.swift in Sources */,
 				81C68FB91C16CD630063D2E3 /* AppDelegate.swift in Sources */,
+				8178931D1C1714B60028F82C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +347,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "shadowsocks-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -338,10 +361,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "shadowsocks-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -349,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "shadowsocks-Mac/Info.plist";
@@ -357,6 +383,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-Mac-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -364,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "shadowsocks-Mac/Info.plist";
@@ -372,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-Mac-Bridging-Header.h";
 			};
 			name = Release;
 		};
