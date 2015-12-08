@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81C68FA11C16CD3A0063D2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */; };
+		81C68FA31C16CD3A0063D2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FA21C16CD3A0063D2E3 /* ViewController.swift */; };
+		81C68FA61C16CD3A0063D2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA41C16CD3A0063D2E3 /* Main.storyboard */; };
+		81C68FA81C16CD3A0063D2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */; };
+		81C68FAB1C16CD3A0063D2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA91C16CD3A0063D2E3 /* LaunchScreen.storyboard */; };
+		81C68FB91C16CD630063D2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FB81C16CD630063D2E3 /* AppDelegate.swift */; };
+		81C68FBB1C16CD630063D2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FBA1C16CD630063D2E3 /* ViewController.swift */; };
+		81C68FBD1C16CD630063D2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FBC1C16CD630063D2E3 /* Assets.xcassets */; };
+		81C68FC01C16CD630063D2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FBE1C16CD630063D2E3 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadowsocks-iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81C68FA21C16CD3A0063D2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81C68FA51C16CD3A0063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C68FAA1C16CD3A0063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81C68FAC1C16CD3A0063D2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C68FB61C16CD630063D2E3 /* shadowsocks-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shadowsocks-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C68FB81C16CD630063D2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81C68FBA1C16CD630063D2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81C68FBC1C16CD630063D2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C68FBF1C16CD630063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81C68FC11C16CD640063D2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81C68F9A1C16CD3A0063D2E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C68FB31C16CD630063D2E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81C68F941C16CD3A0063D2E3 = {
+			isa = PBXGroup;
+			children = (
+				81C68F9F1C16CD3A0063D2E3 /* shadowsocks-iOS */,
+				81C68FB71C16CD630063D2E3 /* shadowsocks-Mac */,
+				81C68F9E1C16CD3A0063D2E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81C68F9E1C16CD3A0063D2E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */,
+				81C68FB61C16CD630063D2E3 /* shadowsocks-Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C68F9F1C16CD3A0063D2E3 /* shadowsocks-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */,
+				81C68FA21C16CD3A0063D2E3 /* ViewController.swift */,
+				81C68FA41C16CD3A0063D2E3 /* Main.storyboard */,
+				81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */,
+				81C68FA91C16CD3A0063D2E3 /* LaunchScreen.storyboard */,
+				81C68FAC1C16CD3A0063D2E3 /* Info.plist */,
+			);
+			path = "shadowsocks-iOS";
+			sourceTree = "<group>";
+		};
+		81C68FB71C16CD630063D2E3 /* shadowsocks-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				81C68FB81C16CD630063D2E3 /* AppDelegate.swift */,
+				81C68FBA1C16CD630063D2E3 /* ViewController.swift */,
+				81C68FBC1C16CD630063D2E3 /* Assets.xcassets */,
+				81C68FBE1C16CD630063D2E3 /* Main.storyboard */,
+				81C68FC11C16CD640063D2E3 /* Info.plist */,
+			);
+			path = "shadowsocks-Mac";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81C68F9C1C16CD3A0063D2E3 /* shadowsocks-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C68FAF1C16CD3A0063D2E3 /* Build configuration list for PBXNativeTarget "shadowsocks-iOS" */;
+			buildPhases = (
+				81C68F991C16CD3A0063D2E3 /* Sources */,
+				81C68F9A1C16CD3A0063D2E3 /* Frameworks */,
+				81C68F9B1C16CD3A0063D2E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "shadowsocks-iOS";
+			productName = "shadowsocks-iOS";
+			productReference = 81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81C68FB51C16CD630063D2E3 /* shadowsocks-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C68FC21C16CD640063D2E3 /* Build configuration list for PBXNativeTarget "shadowsocks-Mac" */;
+			buildPhases = (
+				81C68FB21C16CD630063D2E3 /* Sources */,
+				81C68FB31C16CD630063D2E3 /* Frameworks */,
+				81C68FB41C16CD630063D2E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "shadowsocks-Mac";
+			productName = "shadowsocks-Mac";
+			productReference = 81C68FB61C16CD630063D2E3 /* shadowsocks-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81C68F951C16CD3A0063D2E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = taichi;
+				TargetAttributes = {
+					81C68F9C1C16CD3A0063D2E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					81C68FB51C16CD630063D2E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 81C68F981C16CD3A0063D2E3 /* Build configuration list for PBXProject "shadowsocks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81C68F941C16CD3A0063D2E3;
+			productRefGroup = 81C68F9E1C16CD3A0063D2E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81C68F9C1C16CD3A0063D2E3 /* shadowsocks-iOS */,
+				81C68FB51C16CD630063D2E3 /* shadowsocks-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81C68F9B1C16CD3A0063D2E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C68FAB1C16CD3A0063D2E3 /* LaunchScreen.storyboard in Resources */,
+				81C68FA81C16CD3A0063D2E3 /* Assets.xcassets in Resources */,
+				81C68FA61C16CD3A0063D2E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C68FB41C16CD630063D2E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C68FBD1C16CD630063D2E3 /* Assets.xcassets in Resources */,
+				81C68FC01C16CD630063D2E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81C68F991C16CD3A0063D2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C68FA31C16CD3A0063D2E3 /* ViewController.swift in Sources */,
+				81C68FA11C16CD3A0063D2E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C68FB21C16CD630063D2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C68FBB1C16CD630063D2E3 /* ViewController.swift in Sources */,
+				81C68FB91C16CD630063D2E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81C68FA41C16CD3A0063D2E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C68FA51C16CD3A0063D2E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81C68FA91C16CD3A0063D2E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C68FAA1C16CD3A0063D2E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		81C68FBE1C16CD630063D2E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C68FBF1C16CD630063D2E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81C68FAD1C16CD3A0063D2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81C68FAE1C16CD3A0063D2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81C68FB01C16CD3A0063D2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "shadowsocks-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		81C68FB11C16CD3A0063D2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "shadowsocks-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		81C68FC31C16CD640063D2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "shadowsocks-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		81C68FC41C16CD640063D2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "shadowsocks-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81C68F981C16CD3A0063D2E3 /* Build configuration list for PBXProject "shadowsocks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C68FAD1C16CD3A0063D2E3 /* Debug */,
+				81C68FAE1C16CD3A0063D2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C68FAF1C16CD3A0063D2E3 /* Build configuration list for PBXNativeTarget "shadowsocks-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C68FB01C16CD3A0063D2E3 /* Debug */,
+				81C68FB11C16CD3A0063D2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C68FC21C16CD640063D2E3 /* Build configuration list for PBXNativeTarget "shadowsocks-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C68FC31C16CD640063D2E3 /* Debug */,
+				81C68FC41C16CD640063D2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81C68F951C16CD3A0063D2E3 /* Project object */;
+}
