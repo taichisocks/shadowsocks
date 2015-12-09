@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -24,3 +24,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+extension NSApplication {
+    func relaunch(sender: AnyObject?) {
+        let task = NSTask()
+        // helper tool path
+        task.launchPath = NSBundle.mainBundle().pathForResource("relaunch", ofType: nil)!
+        // self PID as a argument
+        task.arguments = [String(NSProcessInfo.processInfo().processIdentifier)]
+        task.launch()
+    }
+}

@@ -7,73 +7,116 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8178931C1C1714B60028F82C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8178931A1C1714B60028F82C /* main.c */; };
-		8178931D1C1714B60028F82C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8178931A1C1714B60028F82C /* main.c */; };
-		817893321C171C770028F82C /* ShadowsocksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 817893311C171C5C0028F82C /* ShadowsocksKit.framework */; };
-		817893331C171C770028F82C /* ShadowsocksKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 817893311C171C5C0028F82C /* ShadowsocksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		817893371C171D5B0028F82C /* ShadowsocksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8178932F1C171C5C0028F82C /* ShadowsocksKit.framework */; };
-		817893381C171D5B0028F82C /* ShadowsocksKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8178932F1C171C5C0028F82C /* ShadowsocksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		815D7E101C1866AF00C7DA5D /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 815D7E0F1C1866AF00C7DA5D /* Settings.bundle */; };
 		81C68FA11C16CD3A0063D2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */; };
-		81C68FA31C16CD3A0063D2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FA21C16CD3A0063D2E3 /* ViewController.swift */; };
 		81C68FA61C16CD3A0063D2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA41C16CD3A0063D2E3 /* Main.storyboard */; };
 		81C68FA81C16CD3A0063D2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */; };
 		81C68FAB1C16CD3A0063D2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FA91C16CD3A0063D2E3 /* LaunchScreen.storyboard */; };
 		81C68FB91C16CD630063D2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FB81C16CD630063D2E3 /* AppDelegate.swift */; };
-		81C68FBB1C16CD630063D2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C68FBA1C16CD630063D2E3 /* ViewController.swift */; };
 		81C68FBD1C16CD630063D2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FBC1C16CD630063D2E3 /* Assets.xcassets */; };
 		81C68FC01C16CD630063D2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C68FBE1C16CD630063D2E3 /* Main.storyboard */; };
+		81C690111C17BDDD0063D2E3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690101C17BDDD0063D2E3 /* main.swift */; };
+		81C690151C17BDFC0063D2E3 /* relaunch in Resources */ = {isa = PBXBuildFile; fileRef = 81C6900E1C17BDDD0063D2E3 /* relaunch */; };
+		81C690191C17BFFA0063D2E3 /* MacMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690181C17BFFA0063D2E3 /* MacMainViewController.swift */; };
+		81C6901B1C17C01B0063D2E3 /* iOSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6901A1C17C01B0063D2E3 /* iOSMainViewController.swift */; };
+		81C690A41C18336D0063D2E3 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 81C690A31C18336D0063D2E3 /* song.mp3 */; };
+		81C690AB1C183C210063D2E3 /* PacServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690A91C183C210063D2E3 /* PacServer.swift */; };
+		81C690AC1C183C210063D2E3 /* PacServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690A91C183C210063D2E3 /* PacServer.swift */; };
+		81C690AD1C183C210063D2E3 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 81C690AA1C183C210063D2E3 /* proxy.pac */; };
+		81C690AE1C183C210063D2E3 /* proxy.pac in Resources */ = {isa = PBXBuildFile; fileRef = 81C690AA1C183C210063D2E3 /* proxy.pac */; };
+		81C690C11C183C420063D2E3 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690B81C183C420063D2E3 /* DemoServer.swift */; };
+		81C690C21C183C420063D2E3 /* DemoServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690B81C183C420063D2E3 /* DemoServer.swift */; };
+		81C690C31C183C420063D2E3 /* HttpHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690B91C183C420063D2E3 /* HttpHandlers.swift */; };
+		81C690C41C183C420063D2E3 /* HttpHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690B91C183C420063D2E3 /* HttpHandlers.swift */; };
+		81C690C51C183C420063D2E3 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BA1C183C420063D2E3 /* HttpParser.swift */; };
+		81C690C61C183C420063D2E3 /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BA1C183C420063D2E3 /* HttpParser.swift */; };
+		81C690C71C183C420063D2E3 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BB1C183C420063D2E3 /* HttpRequest.swift */; };
+		81C690C81C183C420063D2E3 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BB1C183C420063D2E3 /* HttpRequest.swift */; };
+		81C690C91C183C420063D2E3 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BC1C183C420063D2E3 /* HttpResponse.swift */; };
+		81C690CA1C183C420063D2E3 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BC1C183C420063D2E3 /* HttpResponse.swift */; };
+		81C690CB1C183C420063D2E3 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BD1C183C420063D2E3 /* HttpRouter.swift */; };
+		81C690CC1C183C420063D2E3 /* HttpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BD1C183C420063D2E3 /* HttpRouter.swift */; };
+		81C690CD1C183C420063D2E3 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BE1C183C420063D2E3 /* HttpServer.swift */; };
+		81C690CE1C183C420063D2E3 /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BE1C183C420063D2E3 /* HttpServer.swift */; };
+		81C690CF1C183C420063D2E3 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BF1C183C420063D2E3 /* Socket.swift */; };
+		81C690D01C183C420063D2E3 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690BF1C183C420063D2E3 /* Socket.swift */; };
+		81C690D11C183C420063D2E3 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690C01C183C420063D2E3 /* String+Misc.swift */; };
+		81C690D21C183C420063D2E3 /* String+Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690C01C183C420063D2E3 /* String+Misc.swift */; };
+		81C690D41C183C860063D2E3 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690D31C183C860063D2E3 /* SettingsModel.swift */; };
+		81C690D51C183C860063D2E3 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690D31C183C860063D2E3 /* SettingsModel.swift */; };
+		81C690D81C1844700063D2E3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C690D71C1844700063D2E3 /* SettingsTableViewController.swift */; };
+		81C690DC1C184C690063D2E3 /* ShadowsocksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C690B41C183C280063D2E3 /* ShadowsocksKit.framework */; };
+		81C690DD1C184C690063D2E3 /* ShadowsocksKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81C690B41C183C280063D2E3 /* ShadowsocksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		81C690E01C184C6F0063D2E3 /* ShadowsocksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81C690B61C183C280063D2E3 /* ShadowsocksKit.framework */; };
+		81C690E11C184C6F0063D2E3 /* ShadowsocksKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 81C690B61C183C280063D2E3 /* ShadowsocksKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8178932E1C171C5C0028F82C /* PBXContainerItemProxy */ = {
+		81C690161C17BE030063D2E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */;
+			containerPortal = 81C68F951C16CD3A0063D2E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81C6900D1C17BDDD0063D2E3;
+			remoteInfo = relaunch;
+		};
+		81C690B31C183C280063D2E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
 			remoteInfo = "ShadowsocksKit iOS";
 		};
-		817893301C171C5C0028F82C /* PBXContainerItemProxy */ = {
+		81C690B51C183C280063D2E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */;
+			containerPortal = 81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
 			remoteInfo = "ShadowsocksKit OSX";
 		};
-		817893341C171C770028F82C /* PBXContainerItemProxy */ = {
+		81C690DE1C184C690063D2E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EECDB3791AC0C9D4006BBC11;
-			remoteInfo = "ShadowsocksKit OSX";
-		};
-		817893391C171D5B0028F82C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */;
+			containerPortal = 81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
 			remoteInfo = "ShadowsocksKit iOS";
 		};
+		81C690E21C184C6F0063D2E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EECDB3791AC0C9D4006BBC11;
+			remoteInfo = "ShadowsocksKit OSX";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		817893361C171C770028F82C /* Embed Frameworks */ = {
+		81C6900C1C17BDDD0063D2E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		81C6902D1C17E8020063D2E3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				817893331C171C770028F82C /* ShadowsocksKit.framework in Embed Frameworks */,
+				81C690DD1C184C690063D2E3 /* ShadowsocksKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8178933B1C171D5B0028F82C /* Embed Frameworks */ = {
+		81C690321C17E8080063D2E3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				817893381C171D5B0028F82C /* ShadowsocksKit.framework in Embed Frameworks */,
+				81C690E11C184C6F0063D2E3 /* ShadowsocksKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,24 +124,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		817893181C1714B60028F82C /* shadowsocks-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
-		817893191C1714B60028F82C /* shadowsocks-Mac-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-Mac-Bridging-Header.h"; sourceTree = "<group>"; };
-		8178931A1C1714B60028F82C /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = Common/main.c; sourceTree = "<group>"; };
-		8178931B1C1714B60028F82C /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = Common/main.h; sourceTree = "<group>"; };
-		817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShadowsocksKit.xcodeproj; path = ShadowsocksKit/ShadowsocksKit.xcodeproj; sourceTree = "<group>"; };
+		815D7E0F1C1866AF00C7DA5D /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shadowsocks-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81C68FA21C16CD3A0063D2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81C68FA51C16CD3A0063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C68FAA1C16CD3A0063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81C68FAC1C16CD3A0063D2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81C68FB61C16CD630063D2E3 /* shadowsocks-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shadowsocks-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C68FB81C16CD630063D2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81C68FBA1C16CD630063D2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81C68FBC1C16CD630063D2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C68FBF1C16CD630063D2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81C68FC11C16CD640063D2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C6900E1C17BDDD0063D2E3 /* relaunch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = relaunch; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C690101C17BDDD0063D2E3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		81C690181C17BFFA0063D2E3 /* MacMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MacMainViewController.swift; sourceTree = "<group>"; };
+		81C6901A1C17C01B0063D2E3 /* iOSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSMainViewController.swift; sourceTree = "<group>"; };
+		81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShadowsocksKit.xcodeproj; path = ../ShadowsocksKit/ShadowsocksKit.xcodeproj; sourceTree = "<group>"; };
+		81C690A31C18336D0063D2E3 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		81C690A51C183AEA0063D2E3 /* shadowsocks-Mac-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-Mac-Bridging-Header.h"; sourceTree = "<group>"; };
+		81C690A61C183AFB0063D2E3 /* shadowsocks-iOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shadowsocks-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		81C690A91C183C210063D2E3 /* PacServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacServer.swift; sourceTree = "<group>"; };
+		81C690AA1C183C210063D2E3 /* proxy.pac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proxy.pac; sourceTree = "<group>"; };
+		81C690B81C183C420063D2E3 /* DemoServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoServer.swift; sourceTree = "<group>"; };
+		81C690B91C183C420063D2E3 /* HttpHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHandlers.swift; sourceTree = "<group>"; };
+		81C690BA1C183C420063D2E3 /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpParser.swift; sourceTree = "<group>"; };
+		81C690BB1C183C420063D2E3 /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		81C690BC1C183C420063D2E3 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		81C690BD1C183C420063D2E3 /* HttpRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRouter.swift; sourceTree = "<group>"; };
+		81C690BE1C183C420063D2E3 /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpServer.swift; sourceTree = "<group>"; };
+		81C690BF1C183C420063D2E3 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		81C690C01C183C420063D2E3 /* String+Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Misc.swift"; sourceTree = "<group>"; };
+		81C690D31C183C860063D2E3 /* SettingsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		81C690D71C1844700063D2E3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817893371C171D5B0028F82C /* ShadowsocksKit.framework in Frameworks */,
+				81C690DC1C184C690063D2E3 /* ShadowsocksKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,40 +172,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				817893321C171C770028F82C /* ShadowsocksKit.framework in Frameworks */,
+				81C690E01C184C6F0063D2E3 /* ShadowsocksKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C6900B1C17BDDD0063D2E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		817893171C1714940028F82C /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				8178931A1C1714B60028F82C /* main.c */,
-				8178931B1C1714B60028F82C /* main.h */,
-				817893181C1714B60028F82C /* shadowsocks-iOS-Bridging-Header.h */,
-				817893191C1714B60028F82C /* shadowsocks-Mac-Bridging-Header.h */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		8178932A1C171C5C0028F82C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8178932F1C171C5C0028F82C /* ShadowsocksKit.framework */,
-				817893311C171C5C0028F82C /* ShadowsocksKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		81C68F941C16CD3A0063D2E3 = {
 			isa = PBXGroup;
 			children = (
-				817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */,
-				817893171C1714940028F82C /* Common */,
+				81C690A71C183C210063D2E3 /* common */,
 				81C68F9F1C16CD3A0063D2E3 /* shadowsocks-iOS */,
 				81C68FB71C16CD630063D2E3 /* shadowsocks-Mac */,
+				81C6900F1C17BDDD0063D2E3 /* relaunch */,
 				81C68F9E1C16CD3A0063D2E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,6 +202,7 @@
 			children = (
 				81C68F9D1C16CD3A0063D2E3 /* shadowsocks-iOS.app */,
 				81C68FB61C16CD630063D2E3 /* shadowsocks-Mac.app */,
+				81C6900E1C17BDDD0063D2E3 /* relaunch */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,12 +210,8 @@
 		81C68F9F1C16CD3A0063D2E3 /* shadowsocks-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */,
-				81C68FA21C16CD3A0063D2E3 /* ViewController.swift */,
-				81C68FA41C16CD3A0063D2E3 /* Main.storyboard */,
-				81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */,
-				81C68FA91C16CD3A0063D2E3 /* LaunchScreen.storyboard */,
-				81C68FAC1C16CD3A0063D2E3 /* Info.plist */,
+				81C6901D1C17D7700063D2E3 /* Classes */,
+				81C6901C1C17D7610063D2E3 /* Resources */,
 			);
 			path = "shadowsocks-iOS";
 			sourceTree = "<group>";
@@ -177,14 +219,108 @@
 		81C68FB71C16CD630063D2E3 /* shadowsocks-Mac */ = {
 			isa = PBXGroup;
 			children = (
-				81C68FB81C16CD630063D2E3 /* AppDelegate.swift */,
-				81C68FBA1C16CD630063D2E3 /* ViewController.swift */,
+				81C6901F1C17D78A0063D2E3 /* Classes */,
+				81C6901E1C17D77B0063D2E3 /* Resources */,
+			);
+			path = "shadowsocks-Mac";
+			sourceTree = "<group>";
+		};
+		81C6900F1C17BDDD0063D2E3 /* relaunch */ = {
+			isa = PBXGroup;
+			children = (
+				81C690101C17BDDD0063D2E3 /* main.swift */,
+			);
+			path = relaunch;
+			sourceTree = "<group>";
+		};
+		81C6901C1C17D7610063D2E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81C690A61C183AFB0063D2E3 /* shadowsocks-iOS-Bridging-Header.h */,
+				81C690A31C18336D0063D2E3 /* song.mp3 */,
+				81C68FA71C16CD3A0063D2E3 /* Assets.xcassets */,
+				81C68FA41C16CD3A0063D2E3 /* Main.storyboard */,
+				81C68FA91C16CD3A0063D2E3 /* LaunchScreen.storyboard */,
+				81C68FAC1C16CD3A0063D2E3 /* Info.plist */,
+				815D7E0F1C1866AF00C7DA5D /* Settings.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		81C6901D1C17D7700063D2E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				81C6901A1C17C01B0063D2E3 /* iOSMainViewController.swift */,
+				81C68FA01C16CD3A0063D2E3 /* AppDelegate.swift */,
+				81C690D71C1844700063D2E3 /* SettingsTableViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		81C6901E1C17D77B0063D2E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				81C690A51C183AEA0063D2E3 /* shadowsocks-Mac-Bridging-Header.h */,
 				81C68FBC1C16CD630063D2E3 /* Assets.xcassets */,
 				81C68FBE1C16CD630063D2E3 /* Main.storyboard */,
 				81C68FC11C16CD640063D2E3 /* Info.plist */,
 			);
-			path = "shadowsocks-Mac";
+			name = Resources;
 			sourceTree = "<group>";
+		};
+		81C6901F1C17D78A0063D2E3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				81C68FB81C16CD630063D2E3 /* AppDelegate.swift */,
+				81C690181C17BFFA0063D2E3 /* MacMainViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		81C690A71C183C210063D2E3 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				81C690D31C183C860063D2E3 /* SettingsModel.swift */,
+				81C690B71C183C420063D2E3 /* Swifter */,
+				81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */,
+				81C690A81C183C210063D2E3 /* PacServer */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		81C690A81C183C210063D2E3 /* PacServer */ = {
+			isa = PBXGroup;
+			children = (
+				81C690A91C183C210063D2E3 /* PacServer.swift */,
+				81C690AA1C183C210063D2E3 /* proxy.pac */,
+			);
+			path = PacServer;
+			sourceTree = "<group>";
+		};
+		81C690AF1C183C280063D2E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C690B41C183C280063D2E3 /* ShadowsocksKit.framework */,
+				81C690B61C183C280063D2E3 /* ShadowsocksKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C690B71C183C420063D2E3 /* Swifter */ = {
+			isa = PBXGroup;
+			children = (
+				81C690B81C183C420063D2E3 /* DemoServer.swift */,
+				81C690B91C183C420063D2E3 /* HttpHandlers.swift */,
+				81C690BA1C183C420063D2E3 /* HttpParser.swift */,
+				81C690BB1C183C420063D2E3 /* HttpRequest.swift */,
+				81C690BC1C183C420063D2E3 /* HttpResponse.swift */,
+				81C690BD1C183C420063D2E3 /* HttpRouter.swift */,
+				81C690BE1C183C420063D2E3 /* HttpServer.swift */,
+				81C690BF1C183C420063D2E3 /* Socket.swift */,
+				81C690C01C183C420063D2E3 /* String+Misc.swift */,
+			);
+			path = Swifter;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -196,12 +332,12 @@
 				81C68F991C16CD3A0063D2E3 /* Sources */,
 				81C68F9A1C16CD3A0063D2E3 /* Frameworks */,
 				81C68F9B1C16CD3A0063D2E3 /* Resources */,
-				8178933B1C171D5B0028F82C /* Embed Frameworks */,
+				81C6902D1C17E8020063D2E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8178933A1C171D5B0028F82C /* PBXTargetDependency */,
+				81C690DF1C184C690063D2E3 /* PBXTargetDependency */,
 			);
 			name = "shadowsocks-iOS";
 			productName = "shadowsocks-iOS";
@@ -215,17 +351,35 @@
 				81C68FB21C16CD630063D2E3 /* Sources */,
 				81C68FB31C16CD630063D2E3 /* Frameworks */,
 				81C68FB41C16CD630063D2E3 /* Resources */,
-				817893361C171C770028F82C /* Embed Frameworks */,
+				81C690321C17E8080063D2E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				817893351C171C770028F82C /* PBXTargetDependency */,
+				81C690171C17BE030063D2E3 /* PBXTargetDependency */,
+				81C690E31C184C6F0063D2E3 /* PBXTargetDependency */,
 			);
 			name = "shadowsocks-Mac";
 			productName = "shadowsocks-Mac";
 			productReference = 81C68FB61C16CD630063D2E3 /* shadowsocks-Mac.app */;
 			productType = "com.apple.product-type.application";
+		};
+		81C6900D1C17BDDD0063D2E3 /* relaunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C690141C17BDDD0063D2E3 /* Build configuration list for PBXNativeTarget "relaunch" */;
+			buildPhases = (
+				81C6900A1C17BDDD0063D2E3 /* Sources */,
+				81C6900B1C17BDDD0063D2E3 /* Frameworks */,
+				81C6900C1C17BDDD0063D2E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = relaunch;
+			productName = relaunch;
+			productReference = 81C6900E1C17BDDD0063D2E3 /* relaunch */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -239,8 +393,16 @@
 				TargetAttributes = {
 					81C68F9C1C16CD3A0063D2E3 = {
 						CreatedOnToolsVersion = 7.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					81C68FB51C16CD630063D2E3 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					81C6900D1C17BDDD0063D2E3 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -258,31 +420,32 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8178932A1C171C5C0028F82C /* Products */;
-					ProjectRef = 817893291C171C5C0028F82C /* ShadowsocksKit.xcodeproj */;
+					ProductGroup = 81C690AF1C183C280063D2E3 /* Products */;
+					ProjectRef = 81C690201C17E7F80063D2E3 /* ShadowsocksKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
 				81C68F9C1C16CD3A0063D2E3 /* shadowsocks-iOS */,
 				81C68FB51C16CD630063D2E3 /* shadowsocks-Mac */,
+				81C6900D1C17BDDD0063D2E3 /* relaunch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8178932F1C171C5C0028F82C /* ShadowsocksKit.framework */ = {
+		81C690B41C183C280063D2E3 /* ShadowsocksKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ShadowsocksKit.framework;
-			remoteRef = 8178932E1C171C5C0028F82C /* PBXContainerItemProxy */;
+			remoteRef = 81C690B31C183C280063D2E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		817893311C171C5C0028F82C /* ShadowsocksKit.framework */ = {
+		81C690B61C183C280063D2E3 /* ShadowsocksKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ShadowsocksKit.framework;
-			remoteRef = 817893301C171C5C0028F82C /* PBXContainerItemProxy */;
+			remoteRef = 81C690B51C183C280063D2E3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -293,7 +456,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C68FAB1C16CD3A0063D2E3 /* LaunchScreen.storyboard in Resources */,
+				81C690A41C18336D0063D2E3 /* song.mp3 in Resources */,
+				81C690AD1C183C210063D2E3 /* proxy.pac in Resources */,
 				81C68FA81C16CD3A0063D2E3 /* Assets.xcassets in Resources */,
+				815D7E101C1866AF00C7DA5D /* Settings.bundle in Resources */,
 				81C68FA61C16CD3A0063D2E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +468,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C690151C17BDFC0063D2E3 /* relaunch in Resources */,
+				81C690AE1C183C210063D2E3 /* proxy.pac in Resources */,
 				81C68FBD1C16CD630063D2E3 /* Assets.xcassets in Resources */,
 				81C68FC01C16CD630063D2E3 /* Main.storyboard in Resources */,
 			);
@@ -314,9 +482,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C68FA31C16CD3A0063D2E3 /* ViewController.swift in Sources */,
 				81C68FA11C16CD3A0063D2E3 /* AppDelegate.swift in Sources */,
-				8178931C1C1714B60028F82C /* main.c in Sources */,
+				81C690C31C183C420063D2E3 /* HttpHandlers.swift in Sources */,
+				81C690CD1C183C420063D2E3 /* HttpServer.swift in Sources */,
+				81C690AB1C183C210063D2E3 /* PacServer.swift in Sources */,
+				81C6901B1C17C01B0063D2E3 /* iOSMainViewController.swift in Sources */,
+				81C690C91C183C420063D2E3 /* HttpResponse.swift in Sources */,
+				81C690D81C1844700063D2E3 /* SettingsTableViewController.swift in Sources */,
+				81C690CF1C183C420063D2E3 /* Socket.swift in Sources */,
+				81C690C51C183C420063D2E3 /* HttpParser.swift in Sources */,
+				81C690C71C183C420063D2E3 /* HttpRequest.swift in Sources */,
+				81C690C11C183C420063D2E3 /* DemoServer.swift in Sources */,
+				81C690D11C183C420063D2E3 /* String+Misc.swift in Sources */,
+				81C690CB1C183C420063D2E3 /* HttpRouter.swift in Sources */,
+				81C690D41C183C860063D2E3 /* SettingsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,24 +503,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C68FBB1C16CD630063D2E3 /* ViewController.swift in Sources */,
 				81C68FB91C16CD630063D2E3 /* AppDelegate.swift in Sources */,
-				8178931D1C1714B60028F82C /* main.c in Sources */,
+				81C690C41C183C420063D2E3 /* HttpHandlers.swift in Sources */,
+				81C690CE1C183C420063D2E3 /* HttpServer.swift in Sources */,
+				81C690AC1C183C210063D2E3 /* PacServer.swift in Sources */,
+				81C690191C17BFFA0063D2E3 /* MacMainViewController.swift in Sources */,
+				81C690CA1C183C420063D2E3 /* HttpResponse.swift in Sources */,
+				81C690D01C183C420063D2E3 /* Socket.swift in Sources */,
+				81C690C61C183C420063D2E3 /* HttpParser.swift in Sources */,
+				81C690C81C183C420063D2E3 /* HttpRequest.swift in Sources */,
+				81C690C21C183C420063D2E3 /* DemoServer.swift in Sources */,
+				81C690D21C183C420063D2E3 /* String+Misc.swift in Sources */,
+				81C690CC1C183C420063D2E3 /* HttpRouter.swift in Sources */,
+				81C690D51C183C860063D2E3 /* SettingsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81C6900A1C17BDDD0063D2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C690111C17BDDD0063D2E3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		817893351C171C770028F82C /* PBXTargetDependency */ = {
+		81C690171C17BE030063D2E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "ShadowsocksKit OSX";
-			targetProxy = 817893341C171C770028F82C /* PBXContainerItemProxy */;
+			target = 81C6900D1C17BDDD0063D2E3 /* relaunch */;
+			targetProxy = 81C690161C17BE030063D2E3 /* PBXContainerItemProxy */;
 		};
-		8178933A1C171D5B0028F82C /* PBXTargetDependency */ = {
+		81C690DF1C184C690063D2E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "ShadowsocksKit iOS";
-			targetProxy = 817893391C171D5B0028F82C /* PBXContainerItemProxy */;
+			targetProxy = 81C690DE1C184C690063D2E3 /* PBXContainerItemProxy */;
+		};
+		81C690E31C184C6F0063D2E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ShadowsocksKit OSX";
+			targetProxy = 81C690E21C184C6F0063D2E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,7 +668,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-iOS/shadowsocks-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -481,7 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-iOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-iOS/shadowsocks-iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -499,7 +701,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-Mac-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-Mac/shadowsocks-Mac-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -518,7 +720,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.taichisocks.shadowsocks-Mac";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-Mac-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "shadowsocks-Mac/shadowsocks-Mac-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		81C690121C17BDDD0063D2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		81C690131C17BDDD0063D2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -548,6 +770,15 @@
 			buildConfigurations = (
 				81C68FC31C16CD640063D2E3 /* Debug */,
 				81C68FC41C16CD640063D2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C690141C17BDDD0063D2E3 /* Build configuration list for PBXNativeTarget "relaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C690121C17BDDD0063D2E3 /* Debug */,
+				81C690131C17BDDD0063D2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ShadowsocksKit/shadowsocks.h>
 
-FOUNDATION_EXPORT double SnapKitVersionNumber;
-FOUNDATION_EXPORT const unsigned char SnapKitVersionString[];
+FOUNDATION_EXPORT double ShadowsocksKitVersionNumber;
+FOUNDATION_EXPORT const unsigned char ShadowsocksKitVersionString[];

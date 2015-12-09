@@ -74,7 +74,11 @@ extern "C" {
  * If failed, -1 is returned. Errors will output to the log file.
  */
 int start_ss_local_server(profile_t profile);
-
+    
+/*
+ * will create new thread
+ */
+void startLocalServerWithConfig(const char* remoteHost, int remotePort, const char* method, const char* password, const char* localHost, int localPort);
 #ifdef __cplusplus
 }
 #endif
