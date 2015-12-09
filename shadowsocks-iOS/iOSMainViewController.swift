@@ -9,33 +9,11 @@
 import UIKit
 import AVFoundation
 
-class iOSMainViewController: UIViewController, AVAudioPlayerDelegate {
+class iOSMainViewController: UIViewController {
 
-    var player: AVAudioPlayer!
     override func viewDidLoad() {
         super.viewDidLoad()
-        play()
-        SettingsModel.sharedInstance.startShadowsocks()
-        SettingsModel.sharedInstance.startPacServer()
-        PacServer.sharedInstance.proxyAllConnection = NSUserDefaults.standardUserDefaults().boolForKey("enabled_proxy_all")
         addressLabel.text =  "auto proxy address: \(PacServer.sharedInstance.audoProxyAddress)"
-    }
-    
-    func play() {
-        let background = NSUserDefaults.standardUserDefaults().boolForKey("enabled_background_mode")
-        guard background else { return }
-        let url = NSBundle.mainBundle().URLForResource("song", withExtension: "mp3")
-        do {
-            player = try AVAudioPlayer(contentsOfURL: url!)
-            player.delegate = self
-            player.play()
-        } catch {
-            
-        }
-    }
-    
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
-        play()
     }
     
     @IBOutlet weak var addressLabel: UILabel!
