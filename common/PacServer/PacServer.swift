@@ -44,7 +44,7 @@ class PacServer {
                 let allPacJS = "function FindProxyForURL(url, host){\r\n\tif (isInNet(host, \"192.168.1.0\", \"255.255.255.0\"))\r\n\t\treturn \"DIRECT\";\r\n\treturn \"SOCKS5 \(self.localHost):\(self.socks5Port); SOCKS \(self.localHost):\(self.socks5Port); DIRECT\";\r\n}"
                 return HttpResponse.RAW(200, "OK", nil, [UInt8](allPacJS.utf8))
             } else {
-                let jsHead = "//my.pac\nvar proxy = \"SOCKS5 \(self.localHost):\(self.socks5Port); SOCKS \(self.localHost):\(self.socks5Port); DIRECT;\"\n"
+                let jsHead = "///my.pac\n\nvar proxy = \"SOCKS5 \(self.localHost):\(self.socks5Port); SOCKS \(self.localHost):\(self.socks5Port); DIRECT;\"\n"
                 let jsStr = jsHead + jsBody
                 return HttpResponse.RAW(200, "OK", nil, [UInt8](jsStr.utf8))
             }

@@ -12,9 +12,22 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
 
+    @IBOutlet weak var menu: NSMenu!
+    
+    @IBAction func QuitClick(sender: NSMenuItem) {
+        NSApplication.sharedApplication().terminate(self)
+    }
+    
+    var statusItem: NSStatusItem!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-
+        statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1) // NSVariableStatusItemLength
+        statusItem.toolTip = "shadowsocks"
+        statusItem.image = NSImage(named: "menu_icon")
+        statusItem.menu = menu
+        
+        SettingsModel.sharedInstance.startShadowsocks()
+        SettingsModel.sharedInstance.startPacServer()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

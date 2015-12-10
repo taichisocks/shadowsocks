@@ -17,7 +17,10 @@ class SettingsModel {
     }
 
     var remotePort: Int {
-        get { return NSUserDefaults.standardUserDefaults().integerForKey(KeyNames.remotePort) ?? 0 }
+        get {
+            let port = NSUserDefaults.standardUserDefaults().integerForKey(KeyNames.remotePort)
+            return port == 0 ? 443 : port
+        }
         set { NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: KeyNames.remotePort) }
     }
     
@@ -37,7 +40,10 @@ class SettingsModel {
     }
     
     var localPort: Int {
-        get { return NSUserDefaults.standardUserDefaults().integerForKey(KeyNames.localPort) ?? 8986 }
+        get {
+            let port = NSUserDefaults.standardUserDefaults().integerForKey(KeyNames.localPort)
+            return port == 0 ? 8986 : port
+        }
         set { NSUserDefaults.standardUserDefaults().setInteger(newValue, forKey: KeyNames.localPort) }
     }
     
