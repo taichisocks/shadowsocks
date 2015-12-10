@@ -39,6 +39,7 @@ class MacMainViewController: NSViewController {
         SettingsModel.sharedInstance.localPort = localPortTextField.integerValue
         SettingsModel.sharedInstance.localHost = localHostTextField.stringValue
 
+        dismissController(sender)
         NSApplication.sharedApplication().relaunch(sender)
     }
     
