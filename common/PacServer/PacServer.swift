@@ -25,7 +25,7 @@ class PacServer {
     private var server = HttpServer()
     
     var audoProxyAddress: String {
-        return "http://127.0.0.1:\(listenPort)/my.pac"
+        return "http://\(localHost):\(listenPort)/my.pac"
     }
     
     var allowOtherDevice = false

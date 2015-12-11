@@ -70,6 +70,9 @@ class SettingsModel {
     }
     
     func startPacServer() {
+        if localHost != "127.0.0.1" {
+            PacServer.sharedInstance.allowOtherDevice = true
+        }
         do {
             try PacServer.sharedInstance.start(8903, socks5Port: UInt16(localPort))
         } catch {
