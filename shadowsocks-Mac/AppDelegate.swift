@@ -26,7 +26,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.image = NSImage(named: "menu_icon")
         statusItem.menu = menu
         
-        SettingsModel.sharedInstance.startShadowsocks()
+        SettingsModel.sharedInstance.startShadowsocks {
+            self.statusItem.image = NSImage(named: "menu_icon_disabled")
+        }
         SettingsModel.sharedInstance.startPacServer()
     }
 

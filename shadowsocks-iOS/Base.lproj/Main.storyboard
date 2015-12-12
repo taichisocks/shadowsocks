@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="X4I-oD-zrt">
-                                <rect key="frame" x="264" y="264" width="72" height="72"/>
+                                <rect key="frame" x="270" y="270" width="60" height="60"/>
                                 <animations/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="auto proxy address: http://127.0.0.1:8999/my.pac" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtl-Ek-Q0R">
@@ -323,6 +323,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="72" height="72"/>
+        <image name="logo" width="60" height="60"/>
     </resources>
 </document>

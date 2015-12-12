@@ -64,9 +64,11 @@ class SettingsModel {
         static let pacPort    = "shadowsocks.pacPort"
     }
     
-    func startShadowsocks() {
+    func startShadowsocks(serverStopped: (() -> Void)? = nil) {
         guard remoteHost != nil && method != nil && password != nil else { return }
-        ShadowsocksKit.startWithConfig(remoteHost!, remotePort: remotePort, method: method!, password: password!, localHost: localHost, localPort: localPort)
+        ShadowsocksKit.startWithConfig(remoteHost!, remotePort: remotePort, method: method!, password: password!, localHost: localHost, localPort: localPort) {
+            serverStopped?()
+        }
     }
     
     func startPacServer() {
